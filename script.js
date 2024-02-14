@@ -30,7 +30,8 @@ window.onload = function () {
 
     // Change IMG
     img.src = "pikachu.gif";
-
+    img.setAttribute("id", "ketnipz");
+    
     // Resize "Yes" button
     var newWidth =
       parseInt(yesButton.style.width || yesButton.offsetWidth) + 40; // Increase by 40px
