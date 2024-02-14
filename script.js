@@ -14,6 +14,7 @@ window.onload = function () {
     "Mdrrrrrr non c'est bon allez RATIO",
   ];
   var currentIndex = 0;
+  var counter = 0
 
   yesButton.addEventListener("click", function () {
     document.body.innerHTML =
@@ -24,6 +25,8 @@ window.onload = function () {
     // Update "No" button text
     this.textContent = messages[currentIndex];
     currentIndex = (currentIndex + 1) % messages.length;
+    
+    counter++;
 
     // Change IMG
     img.src = "pikachu.gif";
@@ -41,9 +44,9 @@ window.onload = function () {
     yesButton.style.fontSize = fontSize + "px";
 
     // Check if "Yes" button occupies 75% of the screen
-    if (
-      newWidth >= window.innerWidth * 0.35 ||
-      newHeight >= window.innerHeight * 0.35
+    if ( counter = 6
+      // newWidth >= window.innerWidth * 0.35 ||
+      // newHeight >= window.innerHeight * 0.35
     ) {
       yesButton.style.width = "100vw";
       yesButton.style.height = "100vh";
