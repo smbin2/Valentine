@@ -6,11 +6,17 @@ body {
   justify-content: center;
 }
 
-img {
+#ketnipz {
   display: block;
   margin: 0 auto;
   max-width: 300px; /* Забезпечуємо, що зображення не буде ширше контейнера */
   max-height: 300px; /* Встановлюємо максимальну висоту для зображення, наприклад, 200px */
+}
+
+#code {
+  display: block;
+  margin: 30px auto;
+  max-height: 100px; /* Встановлюємо максимальну висоту для зображення, наприклад, 200px */
 }
 
 h1 {

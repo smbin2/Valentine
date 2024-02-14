@@ -18,7 +18,7 @@ window.onload = function () {
 
   yesButton.addEventListener("click", function () {
     document.body.innerHTML =
-        "<div style='text-align: center; color: black;'><h1>C'est 100% moi là</h1><img src='ketnipz-b.gif' alt='Love Image' style='max-width: 100%; height: auto;'><img src='Spotifycode.jpeg' alt='https://open.spotify.com/playlist/1Vf2vXgjzIyZHGTfyyRnTM?si=Y-C8y3LWROuwXmz3-kE6SA' style='max-width: 100%; height: auto;'></div>";
+        "<div style='text-align: center; color: black;'><h1>C'est 100% moi là</h1><img id='ketnipz' src='ketnipz-b.gif' alt='Love Image' style='max-width: 100%; height: auto;'><img id='code' src='Spotifycode.jpeg' alt='https://open.spotify.com/playlist/1Vf2vXgjzIyZHGTfyyRnTM?si=Y-C8y3LWROuwXmz3-kE6SA' style='max-width: 100%; height: auto;'></div>";
   });
 
   noButton.addEventListener("click", function () {
@@ -44,10 +44,7 @@ window.onload = function () {
     yesButton.style.fontSize = fontSize + "px";
 
     // Check if "Yes" button occupies 75% of the screen
-    if ( counter = 6
-      // newWidth >= window.innerWidth * 0.35 ||
-      // newHeight >= window.innerHeight * 0.35
-    ) {
+    if ( counter === 6 ) {
       yesButton.style.width = "100vw";
       yesButton.style.height = "100vh";
       yesButton.style.fontSize = "5em"; // Adjust font size for full screen
@@ -60,7 +57,7 @@ window.onload = function () {
       // Change content on "Yes" button click when full screen
       yesButton.onclick = function () {
         document.body.innerHTML =
-          "<div style='text-align: center; color: black;'><h1>C'est 100% moi là</h1><img src='ketnipz-b.gif' alt='Love Image' style='max-width: 100%; height: auto;'><img src='Spotifycode.jpeg' alt='https://open.spotify.com/playlist/1Vf2vXgjzIyZHGTfyyRnTM?si=Y-C8y3LWROuwXmz3-kE6SA' style='max-width: 100%; height: auto;'></div>";
+          "<div style='text-align: center; color: black;'><h1>C'est 100% moi là</h1><img id='ketnipz' src='ketnipz-b.gif' alt='Love Image' style='max-width: 100%; height: auto;'><img id='code' src='Spotifycode.jpeg' alt='https://open.spotify.com/playlist/1Vf2vXgjzIyZHGTfyyRnTM?si=Y-C8y3LWROuwXmz3-kE6SA' style='max-width: 100%; height: auto;'></div>";
       };
     }
   });
